@@ -1,7 +1,12 @@
 import React from "react";
+import { Provider } from "react-redux";
 
-function App() {
-  return <div className="App" />;
-}
+import store from "./store";
+
+const App = () => (
+  <Provider store={store}>
+    <h1>Hello world</h1>
+  </Provider>
+);
 
 export default App;
