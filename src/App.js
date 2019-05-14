@@ -1,7 +1,18 @@
-import React from "react";
+import React from 'react';
+import './config/ReactotronConfig';
 
-function App() {
-  return <div className="App" />;
-}
+import { Provider } from 'react-redux';
+
+import store from './store';
+
+import TodoList from './TodoList';
+
+console.tron.log({ hello: 'World' });
+
+const App = () => (
+  <Provider store={store}>
+    <TodoList />
+  </Provider>
+);
 
 export default App;
