@@ -5,11 +5,13 @@ import { Provider } from 'react-redux';
 
 import store from './store';
 
-import Routes from './routes';
+import TodoList from './TodoList';
+
+console.tron.log({ hello: 'World' });
 
 const App = () => (
   <Provider store={store}>
-    <Routes />
+    <TodoList />
   </Provider>
 );
 
